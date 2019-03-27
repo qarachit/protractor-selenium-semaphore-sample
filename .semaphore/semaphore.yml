@@ -34,5 +34,6 @@ blocks:
           - cd /home/semaphore
           - ls -al
           - npm install protractor
+          - npm install
           - protractor single.conf.js
           
