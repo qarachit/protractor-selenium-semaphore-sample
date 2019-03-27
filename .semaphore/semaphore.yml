@@ -13,7 +13,6 @@ blocks:
       jobs:
       - name: NODE_ENV
         commands:
-          - cd /home/semaphore/
           - echo 'export LT_USERNAME="{your_lambdatest_username}"' >> ~/.bashrc
           - echo 'export LT_ACCESS_KEY="{your_lambda_access_key}"' >> ~/.bashrc
 
@@ -32,5 +31,7 @@ blocks:
       jobs:
       - name: Run Protractor
         commands:
+          - cd /home/semaphore/
+          - npm install protractor
           - protractor single.conf.js
           
