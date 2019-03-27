@@ -32,6 +32,8 @@ blocks:
       - name: Run Protractor
         commands:
           - cd /home/semaphore/
-          - npm install protractor
+          - ls -al
+          - npm start
+          - npm install -g protractor
           - protractor single.conf.js
           
