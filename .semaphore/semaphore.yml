@@ -24,7 +24,5 @@ blocks:
           - checkout
           - cd /home/semaphore/protractor-selenium-semaphore-sample
           - npm install
-          - cd node_modules/protractor
-          - ls -al
-          - protractor single.conf.js
+          - node node_modules/protractor/bin/protractor single.conf.js
           
