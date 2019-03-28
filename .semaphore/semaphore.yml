@@ -31,6 +31,7 @@ blocks:
       jobs:
       - name: Run Protractor
         commands:
+          - ls -al
           - cd /home/semaphore
           - ls -al
           - npm install protractor
