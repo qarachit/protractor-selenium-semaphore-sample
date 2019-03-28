@@ -32,7 +32,7 @@ blocks:
       - name: Run Protractor
         commands:
           - ls -al
-          - cd /home/semaphore
+          - cd /home
           - ls -al
           - npm install protractor
           - npm install
