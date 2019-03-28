@@ -8,25 +8,13 @@ execution_time_limit:
   hours: 3
 
 blocks:
-  - name: Install dependencies
+  - name: Set Env Variables
     task:
       jobs:
       - name: NODE_ENV
         commands:
           - echo 'export LT_USERNAME="{your_lambdatest_username}"' >> ~/.bashrc
           - echo 'export LT_ACCESS_KEY="{your_lambda_access_key}"' >> ~/.bashrc
-
-  - name: Download Pre-requisites
-    task:
-      jobs:
-      - name: Install NPM
-        commands:
-          - checkout
-          - npm install
-      - name: Install Protractor
-        commands:
-          - checkout
-          - npm install -g protractor
   
   - name: Run Tests
     task:
@@ -36,7 +24,7 @@ blocks:
           - checkout
           - cd /home/semaphore/protractor-selenium-semaphore-sample
           - npm install
-          - cd node_modules
+          - cd node_modules/protractor
           - ls -al
           - protractor single.conf.js
           
