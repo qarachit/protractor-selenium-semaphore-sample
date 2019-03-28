@@ -1,6 +1,6 @@
 
-username= process.env.LT_USERNAME || "<your username>",
-accessKey=  process.env.LT_ACCESS_KEY || "<your accessKey>",
+username= process.env.LT_USERNAME || "robovipin",
+accessKey=  process.env.LT_ACCESS_KEY || "bX3VZpiN4Tp7cLD7MTfoXqqOZK3q7Xov7UcSCwGQkzf1MEB6bI",
 
 exports.config = {
   'specs': ['./specs/single.js'],
