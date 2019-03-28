@@ -35,7 +35,7 @@ blocks:
         commands:
           - ls -al
           - checkout
-          - cd /home/semaphore
+          - cd /home/semaphore/protractor-selenium-semaphore-sample
           - ls -al
           - npm install protractor
           - npm install
