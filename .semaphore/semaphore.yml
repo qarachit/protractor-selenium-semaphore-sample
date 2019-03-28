@@ -15,7 +15,7 @@ blocks:
         commands:
           - export LT_USERNAME="robovipin"
           - export LT_ACCESS_KEY="bX3VZpiN4Tp7cLD7MTfoXqqOZK3q7Xov7UcSCwGQkzf1MEB6bI"
-          - echo ${LT_USERNAME}
+          - echo $PATH
 
   - name: Run Tests
     task:
