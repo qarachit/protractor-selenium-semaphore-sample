@@ -17,6 +17,7 @@ blocks:
           - echo 'export LT_USERNAME=robovipin' >> .bashrc
           - echo 'export LT_ACCESS_KEY=bX3VZpiN4Tp7cLD7MTfoXqqOZK3q7Xov7UcSCwGQkzf1MEB6bI' >> .bashrc
           - cat .bashrc
+          - cat .bash_profile
           - echo $LT_USERNAME
 
   - name: Run Tests
